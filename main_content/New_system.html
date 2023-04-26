@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../assets/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/custom_css/styles.css">
+</head>
+<body>
+    <div class="system__Card mt-5">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-lg-9 col-md-9">
+                    <div
+                        class="system__Cards-container text-secondary bg-light p-5 d-flex flex-wrap justify-content-center" >
+                            <div class="system_card py-4 m-2 d-flex flex-column justify-content-between align-items-center" id="popup-trigger" style="cursor: pointer;">
+                                <img class="mb-3 img-fluid"
+                                    src="../assets/images/content-managem.png"
+                                    alt="logo">
+                                <h6>New System</h6>
+                            </div>
+                        
+                        <div
+                            class="system_card py-4 m-2 d-flex flex-column justify-content-between align-items-center">
+                            <img class="mb-3 img-fluid"
+                                src="../assets/images//approved.png" alt="logo">
+                            <h6>Existing System</h6>
+                        </div>
+                        <div
+                            class="system_card py-4 m-2 d-flex flex-column justify-content-between align-items-center">
+                            <img class="mb-3 img-fluid"
+                                src="../assets/images/process.png" alt="logo">
+                            <h6>Significant Changes</h6>
+                        </div>
+                        <div
+                            class="system_card py-4 m-2 d-flex flex-column justify-content-between align-items-center">
+                            <img class="mb-3 img-fluid"
+                                src="../assets/images/approved.png" alt="logo">
+                            <h6>Approved Reports</h6>
+                        </div>
+                        <div
+                            class="system_card py-4 m-2 d-flex flex-column justify-content-between align-items-center">
+                            <img class="mb-3 img-fluid"
+                                src="../assets/images/product.png" alt="logo">
+                            <h6>Process Life Cycle</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <div
+                        class="d-flex flex-column align-items-center justify-content-center systemCard__logout-container w-100 py-5  h-100">
+                        <i class="fa fa-user-circle fa-5x text-secondary"
+                            aria-hidden="true"></i>
+                        <h6 class="text-uppercase text-secondary my-4">system user 1
+                        </h6>
+                        <a href="../main_content/login.html" class="text-center"><button
+                            class="btn btn-danger text-uppercase pe-3 pe-5 pt-2 pb-2"><b>Logout</b></button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="system_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="system_container">
+                        <div class="system_header">
+                            <img class="me-3 img-fluid" src="../assets/images/system.png" style="width: 50px;">
+                            <h2 >New System</h2>
+                        </div>
+                        <form class="system_form mt-4">
+                            <label>System Name</label>
+                            <input type="text">
+                            <label class="mt-4">System Description</label>
+                            <input type="text">
+                        </form>
+                        <div class="system_btn mt-3">
+                            <a href="../layout/layout.html"><button class="inform_btn me-3">System Information</button></a>
+                            <button class="selection_btn">Back to System Selection</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+    // Get popup container element
+const popup = document.querySelector('.system_section');
+
+// Get link/button that triggers popup
+const popupTrigger = document.querySelector('#popup-trigger');
+const popupTriggerOff = document.querySelector('.selection_btn')
+
+// Add event listener to trigger popup when clicked
+popupTrigger.addEventListener('click', function() {
+    popup.style.display = 'block';
+});
+popupTriggerOff.addEventListener('click', function(){
+    popup.style.display = 'none';
+})
+// Add event listener to close popup when user clicks outside of popup content
+window.addEventListener('click', function(event) {
+    if (event.target == popup) {
+        popup.style.display = 'none';
+    }
+});
+</script>
+    <script src="../assets/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../assets/custom_js/custom.js" type="application/javascript"></script>
+</body>
+</html>

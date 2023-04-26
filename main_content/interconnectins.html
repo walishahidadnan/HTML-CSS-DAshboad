@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="../assets/bootstrap/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="../assets/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../assets/bootstrap/dist/css/bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="../assets/custom_css/styles.css">
+    <title>Intercnnection and agreements</title>
+
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="bg-light pt-4 pb-4 ps-5 pe-5 mt-5 rounded">
+              <div class="d-flex justify-content-center align-items-center bg-primary text-center text-light rounded p-3 table-header">
+                <h5 class="ms-3 table-header-heading text-light py-3">Hardware and Software Components</h5>
+              </div>
+                <button id="open-popup-btn"  class="mt-2">View List</button>
+                <div id="popup">
+                <div id="popup-content">
+                  <div class="d-flex justify-content-center align-items-center bg-primary text-center text-light my-2 rounded p-3 table-header">
+                    <h5 class="ms-3 table-header-heading text-light py-2">Hardware and Software Components</h5>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between">
+                   <div class="d-flex align-items-center">
+                    <span>show</span>
+                    <div class="popup-content mx-3">
+                      <select>
+                         <option value="option1">Option 1</option>
+                         <option value="option2">Option 2</option>
+                         <option value="option3">Option 3</option>
+                      </select>
+                   </div>
+                   </div>
+                    <div class="search">
+                      <span class="fa fa-search"></span>
+                      <input placeholder="Search term">
+                    </div>
+                  </div>
+                  <div>
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">No</th>
+                          <th scope="col">Server Host</th>
+                          <th scope="col">ip Address</th>
+                          <th scope="col">Operating System</th>
+                          <th scope="col">Additional Software</th>
+                          <th scope="col">Location</th>
+                          <th scope="col">Application & Sub system</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">
+                            <input type="checkbox" />
+                          </th>
+                          <td>123.156.18.1</td>
+                          <td>123.156.18.1</td>
+                          <td>windows</td>
+                          <td>test</td>
+                          <td>test</td>
+                          <td>test</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <input type="checkbox" />
+                          </th>
+                          <td>123.156.18.1</td>
+                          <td>123.156.18.1</td>
+                          <td>windows</td>
+                          <td>test</td>
+                          <td>test</td>
+                          <td>test</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <input type="checkbox" />
+                          </th>
+                          <td>123.156.18.1</td>
+                          <td>123.156.18.1</td>
+                          <td>windows</td>
+                          <td>test</td>
+                          <td>test</td>
+                          <td>test</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <input type="checkbox" />
+                          </th>
+                          <td>123.156.18.1</td>
+                          <td>123.156.18.1</td>
+                          <td>windows</td>
+                          <td>test</td>
+                          <td>test</td>
+                          <td>test</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <input type="checkbox" />
+                          </th>
+                          <td>123.156.18.1</td>
+                          <td>123.156.18.1</td>
+                          <td>windows</td>
+                          <td>test</td>
+                          <td>test</td>
+                          <td>test</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                     <!-- pagination code is here -->
+                     <div class="d-flex justify-content-between align-items-center">
+                      <div class="pagination-text">
+                          <p>Showing 1 to 12 of 57 entries</p>
+                      </div>
+                      <div class="list-pagination">
+                          <nav aria-label="Page navigation example">
+                              <ul class="pagination">
+                                <li class="page-item"><a class="page-link" href="#"> &#60; &nbsp;Previous</a></li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item active1" aria-current="page"><a class="page-link active1" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                <li class="page-item"><a class="page-link" href="#">Next&nbsp; 	&gt; </a></li>
+                              </ul>
+                          </nav>
+                      </div>
+                  </div>
+                  </div>
+                    <button id="close-popup-btn">Close</button>
+                </div>
+                </div>
+                   
+
+                 
+                    <div class="HS_body-head d-flex justify-content-between align-items-center flex-wrap">
+                      <div class="input-grp " style="flex: 1;">
+                        <label for="File" class="text-secondary my-2">Upload Exel/CVS file:</label>
+                        <br>
+                        <input type="file" id="file" class="my-2" >
+                      </div>
+                      <div class="input-grp d-flex justify-content-between align-items-center flex-wrap" style="flex: 1;">
+                        <label for="demo" class="text-secondary my-2">Please Upload File related to demo file:</label>
+                        <button class="btn demo-btn py-3 my-2">
+                          <i class="fa fa-download" aria-hidden="true">
+                          </i>
+                          <span class="ps-2">Download Demo file</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center py-4">
+                      <button class="btn btn-outline-primary outline-btn">&lt; Back to select system information</button>
+                    </div>
+                    <div class="hr d-flex">
+                      <hr class="w-100">
+                      <p class="px-2 mt-1 text-secondary">Or</p>
+                      <hr class="w-100">
+                    </div>
+                    <div class="HS_form">
+                        <div class="form_grp mt-4 d-flex align-items-center flex-wrap">
+                          <div class="input-grp ms-4" style="flex: 1;">
+                            <label for="host" class="text-secondary">System/Organization Name:</label>
+                            <input type="text" id="host" class="form-control">
+                          </div>
+                          <div class="input-grp ms-4" style="flex: 1;">
+                            <label for="IP" class="text-secondary">Enternal or External:</label>
+                            <input type="text" id="IP" class="form-control">
+                          </div>
+                        </div>
+                        <div class="form_grp mt-4 d-flex align-items-center flex-wrap">
+                          <div class="input-grp ms-4" style="flex: 1;">
+                            <label for="system" class="text-secondary">Agreement Type:</label>
+                            <input type="text" id="system" class="form-control">
+                          </div>
+                          <div class="input-grp ms-4" style="flex: 1;">
+                            <label for="software" class="text-secondary">Agreement Expiration:</label>
+                            <input type="text" id="software" class="form-control">
+                          </div>
+                        </div>
+                        <div class="form_grp mt-4 d-flex align-items-center flex-wrap">
+                          <div class="input-grp ms-4" style="flex: 1;">
+                            <label for="location" class="text-secondary">FIPS 199:</label>
+                            <div class="d-flex">
+                                <button class="btn btn-outline-success mx-2" style="flex: 1;">
+                                  <span>
+                                    <img src="../assets/images/high-arrow.png" class="mb-3" alt="arrow">
+                                    <img src="../assets/images/high.png" alt="arrow">
+                                  </span> 
+                                  Highs
+                                </button>
+                                <button class="btn btn-outline-warning mx-2" style="flex: 1;">
+                                  <span>
+                                    <img src="../assets/images/meduim-arrow.png"  alt="arrow">
+                                    <img src="../assets/images/medium.png" alt="arrow">
+                                  </span> 
+                                  Meduim
+                                </button>
+                                <button class="btn btn-outline-danger mx-2" style="flex: 1;">
+                                  <span>
+                                    <img src="../assets/images/low-arrow.png" class="mt-3" alt="arrow">
+                                    <img src="../assets/images/low.png" alt="arrow">
+                                  </span> 
+                                  Low
+                                </button>
+                            </div>
+                          </div>
+                          <div class="input-grp ms-4" style="flex: 1;">
+                            <label for="application" class="text-secondary">ATO Status:</label>
+                            <input type="text" id="application" class="form-control">
+                          </div>
+                        </div>
+                        <div class="form_btn-grp py-4 d-flex justify-content-center flex-wrap">
+                            <button class="btn btn-outline-primary outline-btn m-2">&lt; Back to select system information</button>
+                            <button class="btn / px-5 m-2">Submit</button>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+    <script>
+      const openPopupBtn = document.getElementById("open-popup-btn");
+const closePopupBtn = document.getElementById("close-popup-btn");
+const popup = document.getElementById("popup");
+
+openPopupBtn.addEventListener("click", () => {
+  popup.style.display = "block";
+});
+
+closePopupBtn.addEventListener("click", () => {
+  popup.style.display = "none";
+});
+
+window.addEventListener("click", (event) => {
+  if (event.target === popup) {
+    popup.style.display = "none";
+  }
+});
+// Get the dropdown element
+var dropdown = document.querySelector('.popup-content select');
+
+// Add a change event listener to the dropdown
+dropdown.addEventListener('change', function() {
+   var selectedOption = this.value;
+   // Do something with the selected option
+});
+
+
+    </script>
+    <script src="../assets/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../assets/custom_js/custom.js" type="application/javascript"></script>
+  </body>
+</html>

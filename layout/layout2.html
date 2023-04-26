@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../assets/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../assets/bootstrap/dist/css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="demoStyles.css"> -->
+    <link rel="stylesheet" href="../assets/custom_css/styles.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <div class="logo-img">
+                <img src="../assets/images/logo.png" alt="logo" class="img-fluid">
+            </div>
+            <i class="fa fa-bars" id="btn"></i>
+        </div>
+        <ul class="nav-list">
+            <li>
+                <a href="#">
+                    <i class="fa fa-home"></i>
+                    <span class="link_name">DashBoard</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-file"></i>
+                    <span class="link_name">Documents</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-cog"></i>
+                    <span class="link_name">Settings</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-sign-out"></i>
+                    <span class="link_name">Logout</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="home-section">
+        <!-- Header Starts here -->
+        <div class="header-container m-0  ps-4 pe-4 pt-5 pb-5">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <p class="header-heading" href="#">Welcome to system owner</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="header_input pb-3">
+                        <input type="text" placeholder="Search">
+                        <i class="fa fa-search ms-2" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <nav class="navbar navbar-expand-lg ms-auto ">
+                        <div class=" w-100">
+                            <form class="d-flex w-100">
+                                <div class="d-flex flex-wrap ms-auto header_form ">
+                                    <div class="header_profile me-2">
+                                        <img src="../assets/images/profile.png">
+                                    </div>
+                                    <div class="header_user ms-1 me-4 my-1 text-light">
+                                        <h3>User 123</h3>
+                                        <small>Business</small>
+                                    </div>
+                                    <a href="#" class="notifice_contain">
+                                        <div class="dot"></div>
+                                        <img src="../assets/images/notifice.png">
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!--Header ends here-->
+        <div class="content">
+            <div class="one-content" id="content-one">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 col-12">
+                            <div class="main_box2 mb-3">
+                                <div class="bar-chart">
+                                  <canvas id="myChart3"></canvas>
+                                  <div class="bar-chart-text">
+                                      <div class="text-center">
+                                          <p>System 1</p>
+                                      </div>
+                                      <div>
+                                          <p>System 2</p>
+                                      </div>
+                                      <div>
+                                          <p>System 3</p>
+                                      </div>
+                                      <div>
+                                          <p>System 4</p>
+                                      </div>
+                                  </div>
+                                  <div class="bg-light ps-5 pb-3 bar-chart-boxes d-flex justify-content-between">
+                                      <p> <span class="box_1">.</span> Open Finding</p>
+                                      <p> <span class="box_2">.</span> Open Finding</p>
+                                      <p> <span class="box_3">.</span> Open Finding</p>
+                                  </div>
+                              </div>
+                              </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="main_box2 mb-3" style="height: 96%;">
+                                <div>
+                                    <canvas id="chart2"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                        <a href="#" class="client-work-details-container">
+                            <div class="client-work-detail">
+                            <div class="client-work-detail-img bg-danger">
+                                <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                            </div>
+                            <div class="client-work-detail-content">
+                                <h4 class="pt-4 mb-0"><b>3-4 months</b></h4>
+                                <p>First Alert</p>
+                            </div>
+                            </div>
+                        </a>
+                        </div>
+                        <div class="col-12 col-md-4">
+                        <a href="#" class="client-work-details-container">
+                            <div class="client-work-detail">
+                            <div class="client-work-detail-img bg-warning">
+                                <i class="fa fa-file"></i>
+                            </div>
+                            <div class="client-work-detail-content">
+                                <h4 class="pt-4 mb-0"><b>6-9 months</b></h4>
+                                <p>already t be in a queue</p>
+                            </div>
+                            </div>
+                        </a>
+                        </div>
+                        <div class="col-12 col-md-4">
+                        <a href="#" class="client-work-details-container">
+                            <div class="client-work-detail">
+                            <div class="client-work-detail-img bg-success">
+                                <i class="fa fa-file-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="client-work-detail-content">
+                                <h4 class="pt-4 mb-0"><b>9-12 months</b></h4>
+                                <p>will be ok</p>
+                            </div>
+                            </div>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                          <div class="bg-light pt-4 pb-4 ps-5 pe-5 mt-5 rounded">
+                              <div class="d-flex justify-content-center align-items-center bg-primary text-center text-light rounded p-3 table-header text-light">
+                                  <img src="../assets/images/operation.png" alt="img" style="width: 65px;">
+                                  <h5 class="ms-3 table-header-heading">System Progress</h5>
+                              </div>
+              
+                              <!-- Tab links -->
+                              <div class="mt-4 tab">
+                                  <button class="tablinks" onclick="openTable(event, 'tab1')" id="defaultOpen">New System Progress</button>
+                                  <button class="tablinks" onclick="openTable(event, 'tab2')">Annual System Progress</button>
+                                  <button class="tablinks" onclick="openTable(event, 'tab3')">Overall risk assessment status</button>
+                              </div>
+                              
+                              <!-- Tab content -->
+              
+                              <div id="tab1" class="tabcontent">
+              
+                                  <!-- code of table is here -->
+              
+                                  <div class="table-responsive-lg">
+                                      <table class="table mt-5">
+                                          <thead class="table-head">
+                                              <tr>
+                                                  <th scope="col">System Name</th>
+                                                  <th scope="col">New</th>
+                                                  <th scope="col">Ssp dev</th>
+                                                  <th scope="col">Lead isso</th>
+                                                  <th scope="col">isso</th>
+                                                  <th scope="col">isso assignment</th>
+                                                  <th scope="col">Ssp submition</th>
+                                                  <th scope="col">ST & E Assesment</th>
+                                                  <th scope="col">SAR review</th>
+                                                  <th scope="col">isso</th>
+                                                  <th scope="col">isso and approval</th>
+                                                  <th scope="col">R n C review</th>
+                                                  <th scope="col">ciso review</th>
+                                                  <th scope="col">ATO MEMO review</th>
+                                              </tr>
+                                          </thead>
+                                          <tbody class="table-body">
+                                              <tr>
+                                                  <td>test_demo_1</td>
+                                                  <td>
+                                                      <div class="new-circle"></div>
+                                                  </td>
+                                                  <td><div class="ms-3 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-3 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-2 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-2 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                              </tr>
+                                              <tr>
+                                                  <td>test_demo_1</td>
+                                                  <td>
+                                                      <div class="new-circle"></div>
+                                                  </td>
+                                                  <td><div class="ms-3 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-3 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-2 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-2 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                              </tr>
+                                              <tr>
+                                                  <td>test_demo_1</td>
+                                                  <td>
+                                                      <div class="new-circle"></div>
+                                                  </td>
+                                                  <td><div class="ms-3 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-3 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-2 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-2 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                              <tr>
+                                                  <td>test_demo_1</td>
+                                                  <td>
+                                                      <div class="new-circle"></div>
+                                                  </td>
+                                                  <td><div class="ms-3 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-3 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-2 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-2 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                              </tr>
+                                              <tr>
+                                                  <td>test_demo_1</td>
+                                                  <td>
+                                                      <div class="new-circle"></div>
+                                                  </td>
+                                                  <td><div class="ms-3 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-3 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-2 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-2 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                              </tr>
+                                              <tr>
+                                                  <td>test_demo_1</td>
+                                                  <td>
+                                                      <div class="new-circle"></div>
+                                                  </td>
+                                                  <td><div class="ms-3 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-3 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-2 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-2 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </div>
+                              </div>
+                              
+                              <div id="tab2" class="tabcontent">
+              
+                                  <!-- code of table is here -->
+              
+                                  <div class="table-responsive-lg">
+                                      <table class="table mt-5">
+                                          <thead class="table-head">
+                                              <tr>
+                                                  <th scope="col">System Name</th>
+                                                  <th scope="col">New</th>
+                                                  <th scope="col">Ssp dev</th>
+                                                  <th scope="col">Lead isso</th>
+                                                  <th scope="col">isso</th>
+                                                  <th scope="col">isso assignment</th>
+                                                  <th scope="col">Ssp submition</th>
+                                                  <th scope="col">ST & E Assesment</th>
+                                                  <th scope="col">SAR review</th>
+                                                  <th scope="col">isso</th>
+                                                  <th scope="col">isso and approval</th>
+                                                  <th scope="col">R n C review</th>
+                                                  <th scope="col">ciso review</th>
+                                                  <th scope="col">ATO MEMO review</th>
+                                              </tr>
+                                          </thead>
+                                          <tbody class="table-body">
+                                              <tr>
+                                                  <td>test_demo_1</td>
+                                                  <td>
+                                                      <div class="new-circle"></div>
+                                                  </td>
+                                                  <td><div class="ms-3 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-3 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-2 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-2 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                              </tr>
+                                              <tr>
+                                                  <td>test_demo_1</td>
+                                                  <td>
+                                                      <div class="new-circle"></div>
+                                                  </td>
+                                                  <td><div class="ms-3 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-3 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-2 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-2 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                              </tr>
+                                              <tr>
+                                                  <td>test_demo_1</td>
+                                                  <td>
+                                                      <div class="new-circle"></div>
+                                                  </td>
+                                                  <td><div class="ms-3 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-3 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-2 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-2 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                              <tr>
+                                                  <td>test_demo_1</td>
+                                                  <td>
+                                                      <div class="new-circle"></div>
+                                                  </td>
+                                                  <td><div class="ms-3 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-3 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-2 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-2 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                                  <td><div class="ms-4 mt-2 smalls-circles"></div></td>
+                                              </tr>
+                                              
+                                          </tbody>
+                                      </table>
+                                  </div>
+                              </div>
+                              
+                              <div id="tab3" class="tabcontent">
+
+                                <!-- code of table is here -->
+            
+                                <div class="table-responsive-lg">
+                                    <table class="table mt-5">
+                                        <tbody class="table-body">
+                                            <tr class="border-bottom border-dark">
+                                                <td>System Name</td>
+                                                <td>Annual Renewal</td>
+                                                <td>Ssp dev</td>
+                                                <td>Lead isso</td>
+                                                <td>isso</td>
+                                                <td>isso assignment</td>
+                                                <td>Ssp submition</td>
+                                                <td>ST & E Assesment</td>
+                                                <td>SAR review</td>
+                                                <td>isso</td>
+                                                <td>isso and so approval</td>
+                                                <td>R n C review</td>
+                                                <td>ciso review</td>
+                                                <td>ATO MEMO</td>
+                                            </tr>
+                                            <tr>
+                                                <td>System Name</td>
+                                                <td>Annual Renewal</td>
+                                                <td>Ssp dev</td>
+                                                <td>Lead isso</td>
+                                                <td>isso</td>
+                                                <td>isso assignment</td>
+                                                <td>Ssp submition</td>
+                                                <td>ST & E Assesment</td>
+                                                <td>SAR review</td>
+                                                <td>isso</td>
+                                                <td>isso and so approval</td>
+                                                <td>R n C review</td>
+                                                <td>ciso review</td>
+                                                <td>ATO MEMO</td>
+                                            </tr>
+                                            <tr>
+                                                <td>System_Name</td>
+                                                <td>Annual Renewal</td>
+                                                <td>Ssp dev</td>
+                                                <td>Lead isso</td>
+                                                <td>isso</td>
+                                                <td>isso assignment</td>
+                                                <td>Ssp submition</td>
+                                                <td>ST & E Assesment</td>
+                                                <td>SAR review</td>
+                                                <td>isso</td>
+                                                <td>isso and so approval</td>
+                                                <td>R n C review</td>
+                                                <td>ciso review</td>
+                                                <td>ATO MEMO</td>
+                                            </tr>
+                                            <tr>
+                                                <td >System Name</td>
+                                                <td>Annual Renewal</td>
+                                                <td>Ssp dev</td>
+                                                <td>Lead isso</td>
+                                                <td>isso</td>
+                                                <td>isso assignment</td>
+                                                <td>Ssp submition</td>
+                                                <td>ST & E Assesment</td>
+                                                <td>SAR review</td>
+                                                <td>isso</td>
+                                                <td>isso and so approval</td>
+                                                <td>R n C review</td>
+                                                <td>ciso review</td>
+                                                <td>ATO MEMO</td>
+                                            <tr>
+                                                <td >System Name</td>
+                                                <td>Annual Renewal</td>
+                                                <td>Ssp dev</td>
+                                                <td>Lead isso</td>
+                                                <td>isso</td>
+                                                <td>isso assignment</td>
+                                                <td>Ssp submition</td>
+                                                <td>ST & E Assesment</td>
+                                                <td>SAR review</td>
+                                                <td>isso</td>
+                                                <td>isso and so approval</td>
+                                                <td>R n C review</td>
+                                                <td>ciso review</td>
+                                                <td>ATO MEMO</td>
+                                            </tr>
+                                            <tr>
+                                                <td >System Name</td>
+                                                <td>Annual Renewal</td>
+                                                <td>Ssp dev</td>
+                                                <td>Lead isso</td>
+                                                <td>isso</td>
+                                                <td>isso assignment</td>
+                                                <td>Ssp submition</td>
+                                                <td>ST & E Assesment</td>
+                                                <td>SAR review</td>
+                                                <td>isso</td>
+                                                <td>isso and so approval</td>
+                                                <td>R n C review</td>
+                                                <td>ciso review</td>
+                                                <td>ATO MEMO</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                              
+                              
+                            </div>
+                          </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+      function openTable(evt, tableName) {
+      // Declare all variables
+      var i, tabcontent, tablinks;
+
+      // Get all elements with class="tabcontent" and hide them
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+      }
+
+      // Get all elements with class="tablinks" and remove the class "active"
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+
+      // Show the current tab, and add an "active" class to the button that opened the tab
+      document.getElementById(tableName).style.display = "block";
+      evt.currentTarget.className += " active";
+      }
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+</script>
+<script>
+    const ctx2 = document.getElementById('myChart3');
+
+new Chart(ctx2, {
+type: 'bar',
+data: {
+labels: ['', 'Green', 'Yellow', 'Red', 'Green', 'Yellow', 'Red', 'Green', 'Yellow', 'Red', 'Green', 'Yellow'],
+datasets: [{
+data: [17, 13, 4, 7, 5, 2, 22, 18, 14 , 7, 5, 3],
+backgroundColor: [
+    'rgba(255, 19, 30, 10)',
+    'rgba(0, 160, 30, 100)',
+    'rgba(255, 250, 50, 70)',
+
+    'rgba(255, 19, 30, 10)',
+    'rgba(0, 160, 30, 100)',
+    'rgba(255, 250, 50, 70)',
+    
+    'rgba(255, 19, 30, 10)',
+    'rgba(0, 160, 30, 100)',
+    'rgba(255, 250, 50, 70)',
+
+    'rgba(255, 19, 30, 10)',
+    'rgba(0, 160, 30, 100)',
+    'rgba(255, 250, 50, 70)',
+]
+}]
+},
+options: {
+plugins: {
+    legend: {
+        display: false
+    },
+    datalabels: {
+    display: false
+    },
+},
+scales: {
+    y: {
+        grid: {
+            display: true,
+            borderDash: [5, 5]
+        },
+        beginAtZero: true   
+    },
+    x: {
+        grid: {
+            display: true,
+            borderDash: [5, 5]
+        },
+        ticks: {
+            display: false
+        },
+        barPercentage: 0.01, // reduce the width of the bars
+        categoryPercentage: 1 // set the spacing between the bars
+    }
+},
+responsive: true
+}
+});
+</script>
+
+<script>
+    var randomScalingFactor = function() {
+    return 50
+    };
+    
+    var randomData = function () {
+    return [
+        randomScalingFactor(),
+        randomScalingFactor(),
+        randomScalingFactor()
+    ];
+    };
+    
+    var randomValue = function (data) {
+    // return Math.max.apply(null, data) * Math.random();
+    return 
+    };
+    
+    var data = randomData();
+    var value = randomValue(data);
+    
+    var configs = {
+    type: 'gauge',
+    
+    data: {
+        labels: ['Low', 'Medium', 'High', ],
+        datasets: [{
+        data: [10, 20, 60, ],
+        value: value,
+        backgroundColor: ['#FFAA59', '#35C997', '#525CE5', ],
+        borderWidth: 5
+        }]
+    },
+    options: {
+        responsive: true,
+        title: {
+        display: true,
+        text: 'Gauge chart with datalabels plugin displaying labels',
+        
+        },
+        layout: {
+        padding: {
+            bottom: 30
+        }
+        },
+        needle: {
+        // Needle circle radius as the percentage of the chart area width
+        // radiusPercentage: 8,
+        // Needle width as the percentage of the chart area width
+        widthPercentage: 2.2,
+        // Needle length as the percentage of the interval between inner radius (0%) and outer radius (100%) of the arc
+        lengthPercentage: -10,
+        // bottom: 100,
+        // The color of the needle
+        color: 'rgba(0, 0, 0, 1)'
+        },
+        valueLabel: {
+        display: false
+        },
+        plugins: {
+        datalabels: {
+            display: true,
+            formatter:  function (values, contexts) {
+            return contexts.chart.data.labels[contexts.dataIndex];
+            },
+            //color: function (context) {
+            //  return context.dataset.backgroundColor;
+            //},
+        color: '#fff',
+            //color: 'rgba(255, 255, 255, 1.0)',
+            backgroundColor: null,
+            font: {
+            size: 16,
+            }
+        }
+        }
+    }
+    };
+    
+    window.onload = function() {
+    var ctxs = document.getElementById('chart2').getContext('2d');
+    window.myGauges = new Chart(ctxs, configs);
+    const sidebar = document.querySelector('.sidebar');
+        const closeBtn = document.querySelector('#btn');
+        closeBtn.addEventListener('click', function(){
+            sidebar.classList.toggle('open')
+        })
+};
+</script>
+
+
+  <script src="https://unpkg.com/chart.js@2.8.0/dist/Chart.bundle.js"></script>
+  <script src="https://unpkg.com/chartjs-gauge@0.3.0/dist/chartjs-gauge.js"></script>
+ 
+  <script src="https://unpkg.com/chartjs-plugin-datalabels@0.7.0/dist/chartjs-plugin-datalabels.js"></script>
+    <script src="../assets/custom_js/my-chart.js"></script>
+    
+<script src="../assets/bootstrap/dist/js/bootstrap.js"></script>
+<script src="../assets/custom_js/custom.js" type="application/javascript"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../assets/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../layout/demoStyles.css">
+    <link rel="stylesheet" href="../assets/custom_css/styles.css">
+    <link rel="stylesheet" href="sidebar.css">
+
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <div class="logo-img">
+                <img src="../assets/images/logo.png" alt="logo" class="img-fluid">
+            </div>
+            <i class="fa fa-bars" id="btn"></i>
+        </div>
+        <ul class="nav-list">
+            <li>
+                <a href="#">
+                    <i class="fa fa-home"></i>
+                    <span class="link_name">DashBoard</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-file"></i>
+                    <span class="link_name">Documents</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-cog"></i>
+                    <span class="link_name">Settings</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-sign-out"></i>
+                    <span class="link_name">Logout</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="home-section">
+        <div class="header-container m-0  ps-4 pe-4 pt-5 pb-5">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <p class="header-heading" href="#">Welcome to system owner</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="header_input pb-3">
+                        <input type="text" placeholder="Search">
+                        <i class="fa fa-search ms-2" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <nav class="navbar navbar-expand-lg ms-auto ">
+                        <div class=" w-100">
+                            <form class="d-flex w-100">
+                                <div class="d-flex flex-wrap ms-auto header_form ">
+                                    <div class="header_profile me-2">
+                                        <img src="../assets/images/profile.png">
+                                    </div>
+                                    <div class="header_user ms-1 me-4">
+                                        <h3>User 123</h3>
+                                        <p>Business women</p>
+                                    </div>
+                                    <a href="#" class="notifice_contain">
+                                        <div class="dot"></div>
+                                        <img src="../assets/images/notifice.png">
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!--  start work -->
+        <div class="content">
+            <div class="one-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 col-12">
+                            <div class="bar-chart mb-4">
+                                <canvas id="myChart3"></canvas>
+                                <div class="bar-chart-text">
+                                    <div class="text-center">
+                                        <p>System 1</p>
+                                    </div>
+                                    <div>
+                                        <p>System 2</p>
+                                    </div>
+                                    <div>
+                                        <p>System 3</p>
+                                    </div>
+                                    <div>
+                                        <p>System 4</p>
+                                    </div>
+                                </div>
+                                <div class="bg-light ps-5 pb-3 bar-chart-boxes d-flex justify-content-between">
+                                    <p> <span class="box_1">.</span> Open Finding</p>
+                                    <p> <span class="box_2">.</span> Open Finding</p>
+                                    <p> <span class="box_3">.</span> Open Finding</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="bar-chart h-100 pt-5 mb-3">
+                                <div>
+                                    <canvas id="chart2" width="auto" height="auto"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-4  mt-5">
+                          <a href="#">
+                            <div class="client-work-detail">
+                              <div class="client-work-detail-img bg-danger">
+                                <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                              </div>
+                              <div class="client-work-detail-content">
+                                <h4 class="pt-4 mb-0"><b>3-4 months</b></h4>
+                                <p>First Alert</p>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-12 col-md-4  mt-5">
+                          <a href="#">
+                            <div class="client-work-detail">
+                              <div class="client-work-detail-img bg-warning">
+                                <i class="fa fa-file"></i>
+                              </div>
+                              <div class="client-work-detail-content">
+                                <h4 class="pt-4 mb-0"><b>6-9 months</b></h4>
+                                <p>already t be in a queue</p>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-12 col-md-4  mt-5">
+                          <a href="#">
+                            <div class="client-work-detail">
+                              <div class="client-work-detail-img bg-success">
+                                <i class="fa fa-file-o" aria-hidden="true"></i>
+                              </div>
+                              <div class="client-work-detail-content">
+                                <h4 class="pt-4 mb-0"><b>9-12 months</b></h4>
+                                <p>will be ok</p>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+     <script src="https://unpkg.com/chart.js@2.8.0/dist/Chart.bundle.js"></script>
+     <script src="https://unpkg.com/chartjs-gauge@0.3.0/dist/chartjs-gauge.js"></script>
+     <script src="https://unpkg.com/chartjs-plugin-datalabels@0.7.0/dist/chartjs-plugin-datalabels.js"></script>
+       <script src="../assets/custom_js/my-chart.js"></script>
+    <script src="../assets/bootstrap/dist/js/bootstrap.js"></script>
+    <script>
+        const ctx2 = document.getElementById('myChart3');
+  
+  new Chart(ctx2, {
+  type: 'bar',
+  data: {
+    labels: ['', 'Green', 'Yellow', 'Red', 'Green', 'Yellow', 'Red', 'Green', 'Yellow', 'Red', 'Green', 'Yellow'],
+    datasets: [{
+      data: [17, 13, 4, 7, 5, 2, 22, 18, 14 , 7, 5, 3],
+      backgroundColor: [
+        'rgba(255, 19, 30, 10)',
+        'rgba(0, 160, 30, 100)',
+        'rgba(255, 250, 50, 70)',
+  
+        'rgba(255, 19, 30, 10)',
+        'rgba(0, 160, 30, 100)',
+        'rgba(255, 250, 50, 70)',
+        
+        'rgba(255, 19, 30, 10)',
+        'rgba(0, 160, 30, 100)',
+        'rgba(255, 250, 50, 70)',
+  
+        'rgba(255, 19, 30, 10)',
+        'rgba(0, 160, 30, 100)',
+        'rgba(255, 250, 50, 70)',
+      ]
+    }]
+  },
+  options: {
+    plugins: {
+        legend: {
+            display: false
+        },
+        datalabels: {
+          display: false
+        },
+    },
+    scales: {
+        y: {
+            grid: {
+                display: true,
+                borderDash: [2, 2]
+            },
+            beginAtZero: true 
+        },
+        x: {
+            grid: {
+                display: true,
+                borderDash: [2, 2]
+            },
+            ticks: {
+                display: false
+            },
+            barPercentage: 0.01, // reduce the width of the bars
+            categoryPercentage: 0.1 // set the spacing between the bars
+        }
+    },
+    responsive: true
+  }
+  });
+    </script>
+    <script>
+        var randomScalingFactor = function() {
+        return 50
+      };
+      
+      var randomData = function () {
+        return [
+          randomScalingFactor(),
+          randomScalingFactor(),
+          randomScalingFactor()
+        ];
+      };
+      
+      var randomValue = function (data) {
+        // return Math.max.apply(null, data) * Math.random();
+        return 
+      };
+      
+      var data = randomData();
+      var value = randomValue(data);
+      
+      var config2 = {
+        type: 'gauge',
+        
+        data: {
+          labels: ['Low', 'Medium', 'High', ],
+          datasets: [{
+            data: [40, 30, 20 ],
+            value: value,
+            backgroundColor: ['#FFAA59', '#35C997', '#525CE5', ],
+            borderWidth: 5
+          }]
+        },
+        options: {
+          responsive: true,
+          title: {
+            display: true,
+            text: 'Gauge chart with datalabels plugin displaying labels',
+            
+          },
+          layout: {
+            padding: {
+              bottom: 30
+            }
+          },
+          needle: {
+            widthPercentage: 2.2,
+            lengthPercentage: -10,
+            color: 'rgba(0, 0, 0, 1)'
+          },
+          valueLabel: {
+            display: false
+          },
+          plugins: {
+            datalabels: {
+              display: true,
+              formatter:  function (value, context) {
+                return context.chart.data.labels[context.dataIndex];
+              },
+            color: '#fff',
+              backgroundColor: null,
+              font: {
+                size: 16,
+              }
+            }
+          }
+        }
+      };
+      
+      window.onload = function() {
+        var ctx2 = document.getElementById('chart2').getContext('2d');
+        window.myGauge = new Chart(ctx2, config2);
+        const sidebar = document.querySelector('.sidebar');
+        const closeBtn = document.querySelector('#btn');
+        closeBtn.addEventListener('click', function(){
+            sidebar.classList.toggle('open')
+        });
+        const font_size = (window.innerWidth <= 768) ? 10 : 16;
+    window.myGauge.options.plugins.datalabels.font.size = font_size;
+    window.myGauge.update();
+      };
+      window.addEventListener('resize', function(event){
+    const font_size = (window.innerWidth <= 768) ? 10 : 16;
+    window.myGauge.options.plugins.datalabels.font.size = font_size;
+    window.myGauge.update();
+  });
+    </script>
+
+
+
+</body>
+</html>
